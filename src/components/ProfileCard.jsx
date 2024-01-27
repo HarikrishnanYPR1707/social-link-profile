@@ -1,6 +1,29 @@
 import React from "react";
 
 const ProfileCard = () => {
+  const linkData = [
+    {
+      title: "GitHub",
+      url: "#",
+    },
+    {
+      title: "Frontend Mentor",
+      url: "#",
+    },
+    {
+      title: "LinkedIn",
+      url: "#",
+    },
+    {
+      title: "Twitter",
+      url: "#",
+    },
+    {
+      title: "Instagram",
+      url: "#",
+    },
+  ];
+
   return (
     <div className="bg-fmDarkGrey font-inter flex w-full max-w-[385px] flex-col items-center justify-center rounded-xl p-5 lg:p-10">
       {/* upper container  */}
@@ -23,18 +46,19 @@ const ProfileCard = () => {
         </div>
       </div>
       {/* lower container  */}
-      <div className="flex w-full flex-col items-center justify-center">
-        <a
-          href="#"
-          className="bg-fmGrey w-full rounded-lg py-3 text-center text-sm font-semibold text-white"
-        >
-          github
-        </a>
+      <div className="flex w-full flex-col items-center justify-center gap-4">
+        {linkData.map((item, index) => (
+          <a
+            key={index}
+            href={item.url}
+            className="bg-fmGrey w-full rounded-lg py-3 text-center text-sm font-semibold text-white"
+          >
+            {item.title}
+          </a>
+        ))}
       </div>
     </div>
   );
 };
 
 export default ProfileCard;
-
-//    GitHub Frontend Mentor LinkedIn Twitter Instagram
