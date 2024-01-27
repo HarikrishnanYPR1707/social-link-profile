@@ -31,11 +31,9 @@ const ProfileCard = () => {
         <div className="w-[90px] overflow-hidden rounded-full">
           <img src="./avatar-jessica.jpeg" alt="" />
         </div>
-        <div className="mt-8 flex flex-col items-center justify-center">
+        <div className="mt-6 flex flex-col items-center justify-center">
           <div className="mb-8 flex flex-col items-center justify-center gap-1">
-            <h2 className="text-2xl font-semibold text-white">
-              Jessica Randall
-            </h2>
+            <h2 className="text-2xl font-medium text-white">Jessica Randall</h2>
             <h3 className="text-fmGreen text-sm font-semibold">
               London, United Kingdom
             </h3>
@@ -51,7 +49,7 @@ const ProfileCard = () => {
           <a
             key={index}
             href={item.url}
-            className="bg-fmGrey w-full rounded-lg py-3 text-center text-sm font-semibold text-white"
+            className="bg-fmGrey active:bg-fmGreen w-full rounded-lg py-3 text-center text-sm font-semibold text-white active:text-black"
           >
             {item.title}
           </a>
