@@ -6,6 +6,12 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      colors: {
+        fmGreen: "#c5f82a",
+        fmGrey: "#333333",
+        fmDarkGrey: "#1f1f1f",
+        fmOffBlack: "#141414",
+      },
     },
   },
   plugins: [],
