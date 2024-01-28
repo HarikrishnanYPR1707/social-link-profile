@@ -22,14 +22,11 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Semantic JSX markup
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [TailwindCSS](https://tailwindcss.com/) - For styles
 
 ## Author
 
